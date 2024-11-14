@@ -1,0 +1,54 @@
+body {
+  background: #f5f9fc;
+  padding: 40px 0;
+}
+.generationForm {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ccc;
+    width: 50%;
+    padding: 40px 5px;
+}
+#generate-form {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+#generate-form .inputUrl{
+    margin: 20px 0;
+}
+#generate-form input {
+    width: 320px;
+}
+.generationBTN {
+    margin: 40px 0 15px;
+}
+#spinner {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+#qrcode img{
+    margin: auto;
+}
+#save-link {
+    display: block;
+    width: fit-content;
+    color: #fff;
+    margin: 40px auto 10px
+}
+footer {
+    margin: 15px auto;
+}
+
+
+
+/* media Query */
+@media(max-width : 425px){
+    .generationForm{
+        width: 95%;
+    }
+    #generate-form input {
+        width: 270px;
+    }
+}

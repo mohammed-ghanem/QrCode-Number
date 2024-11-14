@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/awsome.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #spinner {
+        display: none;
+      }
+    </style>
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <section class="generationForm container">
+      <h2 class="text-center fw-bold">QR CODE Generator</h2>
+      <form action="" id="generate-form">
+        <div class="inputUrl">
+          <label class="fw-bold">Enter The Number</label>
+          <input
+            id="url"
+            class="form-control"
+            type="text"
+            placeholder="Enter The Number"
+          />
+        </div>
+        <label class="fw-bold">Select QR Code Size</label>
+        <select id="size" class="form-control">
+          <option value="100">100 x 100</option>
+          <option value="200">200 x 200</option>
+          <option value="300" selected>300 x 300</option>
+          <option value="400">400 x 400</option>
+          <option value="500">500 x 500</option>
+          <option value="600">600 x 600</option>
+          <option value="700">700 x 700</option>
+          <option value="800">800 x 800</option>
+        </select>
+        <button
+          class="generationBTN btn btn-sm btn-success fw-bold"
+          type="submit"
+        >
+          GENERATE
+        </button>
+      </form>
+
+      <!-- Generated qr code -->
+      <div id="Generated">
+        <div id="spinner" class="text-center">loading</div>
+        <!-- qr code Output-->
+        <div id="qrcode" class="m-auto"></div>
+      </div>
+    </section>
+    <footer class="container">
+      <h6 class="text-center">
+        Developed By
+        <a href="https://www.linkedin.com/in/mohammed-a-ghanem/" target="_blank">
+          Eng/Mohammed Ghanem
+        </a>
+      </h6>
+    </footer>
+
+   
+
+    <script src="lib/jq.min.js"></script>
+    <script src="lib/qrcodejs.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/awsome.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
